@@ -4,14 +4,23 @@
     if(isset($_POST['code']) && $_POST['code']!=""){
         $_SESSION['code'] = $_POST['code'];
     }
+	else {
+		$_SESSION['code'] = "";
+	}
 
     if(isset($_POST['highlightStyle']) && $_POST['highlightStyle']!=""){
         $_SESSION['style'] = $_POST['highlightStyle'];
     }
+	else {
+		$_SESSION['style'] = "";
+	}
 
     if(isset($_POST['languageCode']) && $_POST['languageCode']!=""){
         $_SESSION['language'] = $_POST['languageCode'];
     }
+	else {
+		$_SESSION['language'] = "";
+	}
     
     function getLanguagesSyntaxes() {
         if ($handle = opendir('.\modules\highlightjs\languages')) {
