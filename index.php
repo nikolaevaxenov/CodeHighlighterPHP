@@ -16,7 +16,7 @@
     
     <?php include("functions.php") ?>
 
-    <title>HighlightWord</title>
+    <title>Highlight for Word documents</title>
 </head>
 <body>
     <div class="container">
@@ -47,5 +47,6 @@
             </div>
         </div>
     </div>
+    <div class="text-center"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>">На главную</a></div>
 </body>
 </html>
