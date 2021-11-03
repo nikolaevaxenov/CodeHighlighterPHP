@@ -57,7 +57,7 @@
 
     function showHighlighted() {
         echo '<link rel="stylesheet" href="modules\highlightjs\styles\\' . $_SESSION['style'] . '.min.css">';
-        echo '<pre><code id="highlighted" class="m-2 language-' . $_SESSION['language'] . '">' . $_SESSION['code'] . "</code></pre>";
+        echo '<pre><code id="highlighted" class="m-2 language-' . $_SESSION['language'] . '">' . htmlspecialchars($_SESSION['code']) . "</code></pre>";
         echo "<script>hljs.highlightAll();</script>";
     }
 ?>
